@@ -3,11 +3,39 @@ import { Search } from 'lucide-react';
 
 const NFLPredictor = () => {
     const [teams] = useState([
-        "New England Patriots",
-        "Green Bay Packers",
-        "Kansas City Chiefs",
-        "Buffalo Bills",
-        "Dallas Cowboys",
+        "Arizona Cardinals", 
+        "Atlanta Falcons", 
+        "Baltimore Ravens", 
+        "Buffalo Bills", 
+        "Carolina Panthers", 
+        "Chicago Bears", 
+        "Cincinnati Bengals", 
+        "Cleveland Browns", 
+        "Dallas Cowboys", 
+        "Denver Broncos", 
+        "Detroit Lions", 
+        "Green Bay Packers", 
+        "Houston Texans", 
+        "Indianapolis Colts", 
+        "Jacksonville Jaguars", 
+        "Kansas City Chiefs", 
+        "Las Vegas Raiders", 
+        "Los Angeles Chargers", 
+        "Los Angeles Rams", 
+        "Miami Dolphins", 
+        "Minnesota Vikings", 
+        "New England Patriots", 
+        "New Orleans Saints", 
+        "New York Giants", 
+        "New York Jets", 
+        "Philadelphia Eagles", 
+        "Pittsburgh Steelers", 
+        "San Francisco 49ers", 
+        "Seattle Seahawks", 
+        "Tampa Bay Buccaneers", 
+        "Tennessee Titans", 
+        "Washington Commanders"
+
     ]);
     const [selectedTeam, setSelectedTeam] = useState("");
     const [stats, setStats] = useState({ wins: 0, points_scored: 0, points_against: 0 });

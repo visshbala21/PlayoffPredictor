@@ -60,7 +60,7 @@ const NFLPredictor = () => {
             {/* Header */}
             <header className="bg-gray-800 text-white p-6 rounded-lg text-center">
                 <h1 className="text-3xl font-bold">NFL Playoff Predictor</h1>
-                <p className="text-gray-300 mt-2">Powered by Machine Learning</p>
+                <p className="text-gray-300 mt-2">Powered by Machine Learning Models</p>
             </header>
 
             {/* Search and Select Team */}

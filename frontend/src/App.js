@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from "./pages/HomePage";
 import CurrentSeasonStats from "./pages/CurrentSeasonStats";
-import CalculatePredictions from "./pages/CalculatePredictions";
-import PlayoffPredictions from "./pages/PlayoffPredictions";
+import NFLPredictor from "./pages/NFLPredictor";  // Make sure NFLPredictor.jsx is in src/pages/
 
 import './styles.css';
 
@@ -16,8 +15,7 @@ const App = () => {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/current-stats">Current Season Stats</Link></li>
-            <li><Link to="/calculate">Calculate Predictions</Link></li>
-            <li><Link to="/predictions">Playoff Predictions</Link></li>
+            <li><Link to="/predict">Calculate Predictions</Link></li>
           </ul>
         </nav>
 
@@ -25,8 +23,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/current-stats" element={<CurrentSeasonStats />} />
-          <Route path="/calculate" element={<CalculatePredictions />} />
-          <Route path="/predictions" element={<PlayoffPredictions />} />
+          <Route path="/predict" element={<NFLPredictor />} />
         </Routes>
       </div>
     </Router>

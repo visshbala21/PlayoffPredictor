@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Playoff Predictor</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NFL Playoff Predictor</h1>
+            <p>Advanced ML algorithms to predict playoff matchup outcomes</p>
+        </header>
+        
+        <div class="team-selection">
+            <div class="team-selector" id="team1-selector">
+                <h2>Select Team 1</h2>
+                <div class="search-container">
+                    <input type="text" id="team1-search" placeholder="Search for a team...">
+                </div>
+                <div class="team-list" id="team1-list"></div>
+                <div class="selected-team" id="team1-selected" style="display: none;">
+                    <div class="team-logo" id="team1-selected-logo"></div>
+                    <div class="team-info">
+                        <h3 id="team1-selected-name">No team selected</h3>
+                        <p id="team1-selected-division"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-selector" id="team2-selector">
+                <h2>Select Team 2</h2>
+                <div class="search-container">
+                    <input type="text" id="team2-search" placeholder="Search for a team...">
+                </div>
+                <div class="team-list" id="team2-list"></div>
+                <div class="selected-team" id="team2-selected" style="display: none;">
+                    <div class="team-logo" id="team2-selected-logo"></div>
+                    <div class="team-info">
+                        <h3 id="team2-selected-name">No team selected</h3>
+                        <p id="team2-selected-division"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button id="predict-button" class="predict-button" disabled>Predict Playoff Outcome</button>
+        
+        <div class="results" id="results">
+            <h2>Playoff Prediction Results</h2>
+            
+            <div class="results-graphic">
+                <div class="team-result" id="team1-result">
+                    <div class="team-logo-large" id="result-logo1"></div>
+                    <h3 id="result-name1"></h3>
+                    <div class="win-probability" id="win-probability1"></div>
+                    <p>Win Probability</p>
+                </div>
+                
+                <div class="vs-badge">VS</div>
+                
+                <div class="team-result" id="team2-result">
+                    <div class="team-logo-large" id="result-logo2"></div>
+                    <h3 id="result-name2"></h3>
+                    <div class="win-probability" id="win-probability2"></div>
+                    <p>Win Probability</p>
+                </div>
+            </div>
+            
+            <div class="prediction-bar">
+                <div class="prediction-marker" id="prediction-marker"></div>
+            </div>
+            <div class="prediction-label" id="prediction-label"></div>
+            
+            <div class="key-factors">
+                <h3>Key Factors in Prediction</h3>
+                <ul class="factors-list" id="factors-list">
+                </ul>
+            </div>
+        </div>
+        
+        <p class="disclaimer">This predictor uses simulated machine learning models and is for entertainment purposes only. Actual playoff outcomes may vary.</p>
+    </div>
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
